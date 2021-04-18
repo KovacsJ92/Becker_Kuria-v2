@@ -20,6 +20,23 @@ Route::group(
 ],function()
 {
 
-    Route::view('/', 'index')->name('pages.index');
+    // Route::view('/', 'pages.index')->name('pages.index');
+
+    Route::get('/', function () {
+        return view ('pages.index');
+    });
+
+    // Route::get(LaravelLocalization::transRoute('routes.room'), function () {
+    //     return view('pages.room');
+    // })->name('pages.room');
+
+    Route::get('szoba', function () {
+        return view ('pages.room');
+    });
+
+    Route::get('lakosztaly', function () {
+        return view ('pages.suite');
+    });
+
 
 });

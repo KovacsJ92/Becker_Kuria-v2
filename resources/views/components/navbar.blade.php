@@ -9,19 +9,19 @@
         </div>
         
         <div class="navbar hidden uppercase lg:flex items-center xl:space-x-2">
-          <a href="/asztalfoglalas" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="/szallashelyek" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Szálláshelyek') }}
           </a>
-          <a href="/rendezvenyek" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="/etkezes" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Étkezés') }}
           </a>
-          <a href="/galeria" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="#service" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Szolgáltatások') }}
           </a>
-          <a href="/rolunk" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="#about" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Rólunk') }}
           </a>
-          <a href="/kapcsolat" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="#contact" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Kapcsolat') }}
           </a>
           <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="hidden ml-48 relative  lg:inline-block text-right">
@@ -40,7 +40,7 @@
                 <div class="py-1" role="none">
                     @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                         @if (LaravelLocalization::getCurrentLocale() != $localeCode)
-                            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" class="block px-4 py-2 text-gold99 text-opacity-75 text-2xl text-left hover:text-gold99" role="menuitem">
+                            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" class="block px-4 py-2 text-gold99 text-opacity-75 text-2xl lg:text-3xl text-left hover:text-gold99" role="menuitem">
                                 {{ $properties['native'] }}
                             </a>
                         @endif
