@@ -8,6 +8,6 @@
 ])
 
 
-<h1 {{ $attributes->merge(['class' => "{$colors[$type]} text-5xl xl:text-6xl uppercase leading-5 w-full text-center py-4"]) }}>
+<h1 {{ $attributes->merge(['class' => "{$colors[$type]} text-5xl xl:text-6xl uppercase leading-5 w-full text-center"]) }}>
     {{ $slot }}
 </h1>

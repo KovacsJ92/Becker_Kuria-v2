@@ -58,27 +58,27 @@
                 <div class="w-full md:w-2/3">
                     <h2 class="text-center text-5xl text-gold99">Szobafelszereltség</h2>
                     <div class="py-20 grid grid-cols-2 md:grid-cols-3 gap-10">
-                        <div class=" flex items-center justify-start md:justify-center">
+                        <div class=" flex items-center justify-start">
                             <img class="w-10 mr-5" src="/images/svg/bathroom.svg" alt="Fürdõszoba" title="Fürdõszoba">
                             <p class="text-2xl lg:text-3xl text-gray20">Fürdőszoba</p>
                         </div>
-                        <div class=" flex items-center justify-start md:justify-center">
+                        <div class=" flex items-center justify-start">
                             <img class="w-10 mr-5" src="/images/svg/shower.svg" alt="Zuhany" title="Zuhany">
                             <p class="text-2xl lg:text-3xl text-gray20">Zuhany</p>
                         </div>
-                        <div class=" flex items-center justify-start md:justify-center">
+                        <div class=" flex items-center justify-start">
                             <img class="w-10 mr-5" src="/images/svg/toilet.svg" alt="WC" title="WC">
                             <p class="text-2xl lg:text-3xl text-gray20">WC</p>
                         </div>
-                        <div class=" flex items-center justify-start md:justify-center">
+                        <div class=" flex items-center justify-start">
                             <img class="w-10 mr-5" src="/images/svg/hair-dryer.svg" alt="Hajszárító" title="Hajszárító">
                             <p class="text-2xl lg:text-3xl text-gray20">Hajszárító</p>
                         </div>
-                        <div class=" flex items-center justify-start md:justify-center">
+                        <div class=" flex items-center justify-start">
                             <img class="w-10 mr-5" src="/images/svg/towel.svg" alt="Törölköző" title="Törölköző">
                             <p class="text-2xl lg:text-3xl text-gray20">Törölköző</p>
                         </div>
-                        <div class=" flex items-center justify-start md:justify-center">
+                        <div class=" flex items-center justify-start">
                             <img class="w-10 mr-5" src="/images/svg/television.svg" alt="4k Smart TV" title="4k Smart TV">
                             <p class="text-2xl lg:text-3xl text-gray20">4k Smart TV</p>
                         </div>

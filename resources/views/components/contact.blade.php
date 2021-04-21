@@ -1,4 +1,4 @@
-<div class="flex flex-col-reverse md:flex-row">
+<div class="flex flex-col-reverse md:flex-row pt-20">
     <div class="w-full md:w-1/2 mt-20 md:mt-0 px-8 flex flex-col justify-start md:justify-center md:items-center">
         <div class="space-y-6 flex flex-col justify-center items-start">
             <h2 class="text-3xl font-semibold text-gray20">Elérhetőségek</h2>

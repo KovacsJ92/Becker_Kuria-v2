@@ -13,7 +13,7 @@
         </div>
     </div>
    
-   <div class="px-8 z-50 bg-white">
+   <div id="szallashelyek" class="px-8 z-50 bg-white py-20">
         <x-section>
             <x-title>Szálláshelyek</x-title>
             <div class="md:flex md:justify-center">
@@ -29,7 +29,7 @@
                                     <source srcset ="/images/{{ $room['image']['name']}}.webp" type="image/webp">
                                     <img class="w-full" src="/images/{{ $room['image']['name']}}.png" alt="room" title="room" height="640" width="860">
                                 </picture>
-                                <div class="p-9 lg:h-80 flex flex-col items-center lg:absolute z-50 inset-x-0 bottom-0 bg-white bg-opacity-75">
+                                <div class="p-9 lg:h-80 flex flex-col items-center lg:absolute z-20 inset-x-0 bottom-0 bg-white bg-opacity-75">
                                     <h2 class="text-5xl text-gray20">{{ $room['name'] }}</h2>
                                     <div class="flex items-center space-x-4 md:space-x-8 my-9">
                                         <div class="flex items-center">
@@ -41,7 +41,9 @@
                                             <p class="text-3xl lg:text-3xl text-gray20">{{ $room['price'] }}</p>
                                         </div>
                                     </div>
-                                    <x-button>{{ $room['href'] }}</x-button>
+                                    <a href="{{ route($room['route']) }}"  class="border hover:border-transparent border-gold99 text-gold99 hover:text-white hover:bg-gold99 bg-opacity-75  transition-colors ease-in duration-500 font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 text-2xl lg:text-3xl uppercase shadow-sm focus:outline-none">
+                                        {{ $room['name'] }}
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -54,8 +56,8 @@
             </div>
         </x-section>
    </div>
-   <div class="bg-whitef8 px-8">
-        <x-section>
+   <div id="etkezes" class="bg-whitef8 px-8 py-20">
+        <x-section >
             <x-title>étkezés</x-title>
             <div class=" py-20">
                 <div class="flex flex-col lg:flex-row items-center justify-center">
@@ -66,7 +68,7 @@
                     <div class="h-112 w-full md:w-200 lg:w-1/3 p-12 flex flex-col items-center justify-between bg-white shadow-lg">
                         <h2 class="text-5xl text-gray1e">Reggeli</h2>
                         <p class="text-3xl text-gray20 text-center">Reggeli a kúria melletti Szép Kávézóban igényelhető, egyéni fizetéssel.<br> Bővített kontinentális reggeli 3000Ft/fő</p>
-                        <x-button>Menü</x-button>
+                        <x-button><a href="https://www.facebook.com/Konyha-Kert-Bisztr%C3%B3-%C3%A9s-B%C3%A1r-1696944263733324">Menü</a></x-button>
                     </div>
                     {{-- <div class="h-72 lg:h-112 w-full md:w-144 p-6 lg:p-12 flex flex-col items-center justify-between bg-white shadow-lg lg:absolute xl:-bottom-20 xl:right-10">
                         <h2 class="text-2xl lg:text-5xl text-gray1e">Reggeli</h2>
@@ -78,7 +80,7 @@
                     <div class="order-last lg:order-first h-112 w-full md:w-200 lg:w-1/3 p-12 flex flex-col items-center justify-between bg-white shadow-lg">
                         <h2 class="text-5xl text-gray1e">Ebéd & vacsora</h2>
                         <p class="text-3xl text-gray20 text-center">A vízparti Konyhakert Bisztró és Bár –ban van lehetőség menü és a la carte étkezésre.</p>
-                        <x-button>Menü & a la carte</x-button>
+                        <x-button><a href="https://www.facebook.com/Konyha-Kert-Bisztr%C3%B3-%C3%A9s-B%C3%A1r-1696944263733324">Menü & a la carte</a></x-button>
                     </div>
                     <picture>
                         <source srcset ="/images/konyhakert.webp" type="image/webp">
@@ -88,7 +90,7 @@
             </div>
         </x-section>
    </div>
-   <div class="bg-white">
+   <div id="szolgaltatasok" class="bg-white">
         <x-section>
             <div class="block sm:hidden">
                 <x-title>Szolgáltatások</x-title>
@@ -142,7 +144,7 @@
             </div>
         </x-section>
    </div>
-   <div class="bg-whitef8">
+   <div id="rolunk" class="bg-whitef8 py-20">
        <x-section>
         <x-title>Becker Kúria</x-title>
            <div class="flex flex-col md:flex-row  md:mx-10">
@@ -150,19 +152,19 @@
                     <div class="pt-20 grid grid-cols-2 gap-4 md:gap-4">
                         <picture class="relative">
                             <source srcset ="/images/old.webp" type="image/webp">
-                            <img   height="315" width="420" src="/images/old.png" alt="cartoon">
+                            <img class="h-full" height="200" width="420" src="/images/old.png" alt="cartoon">
                         </picture>
                         <picture class="relative">
                             <source srcset ="/images/old2.webp" type="image/webp">
-                            <img   height="272" width="420" src="/images/old2.png" alt="cartoon">
+                            <img class="h-full" height="200" width="420" src="/images/old2.png" alt="cartoon">
                         </picture>
                         <picture class="relative">
                             <source srcset ="/images/old3.webp" type="image/webp">
-                            <img   height="274" width="420" src="/images/old3.png" alt="cartoon">
+                            <img class="h-full" height="200" width="420" src="/images/old3.png" alt="cartoon">
                         </picture>
                         <picture class="relative">
                             <source srcset ="/images/old4.webp" type="image/webp">
-                            <img   height="245" width="420" src="/images/old4.png" alt="cartoon">
+                            <img class="h-full" height="200" width="420" src="/images/old4.png" alt="cartoon">
                         </picture>
                     </div>
                </div>
@@ -189,7 +191,7 @@
            </div>
        </x-section>
    </div>
-   <div class="bg-white">
+   <div id="kapcsolat" class="bg-white py-20">
        <x-section>
            <x-title>kapcsolatok</x-title>
            <x-contact></x-contact>

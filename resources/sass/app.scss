@@ -103,17 +103,20 @@ html {
     }
 }
 
-.parallax-bg {
-    background-image: url('../images/parallax-xl.png');
+.animation {
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 
-.parallax {
-    border-top: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -121;
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 .carousel-open:checked+.carousel-item {

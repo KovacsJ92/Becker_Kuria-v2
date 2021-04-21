@@ -26,17 +26,17 @@ Route::group(
         return view ('pages.index');
     });
 
-    // Route::get(LaravelLocalization::transRoute('routes.room'), function () {
-    //     return view('pages.room');
-    // })->name('pages.room');
+    Route::get(LaravelLocalization::transRoute('route.room'), function () {
+        return view('pages.room');
+    })->name('pages.room');
 
-    Route::get('szoba', function () {
-        return view ('pages.room');
-    });
+    // Route::get('szoba', function () {
+    //     return view ('pages.room');
+    // })->name('pages.room');
 
     Route::get('lakosztaly', function () {
         return view ('pages.suite');
-    });
+    })->name('pages.suite');
 
 
 });

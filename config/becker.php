@@ -11,7 +11,7 @@ return [
                 'alt' => 'Szoba',
                 'title' => 'Szoba'
             ],
-            'href' => 'szoba',
+            'route' => 'pages.room',
             'label' => 1,
         ],
         [
@@ -23,7 +23,7 @@ return [
                 'alt' => 'Lakosztály',
                 'title' => 'Lakosztály'
             ],
-            'href' => 'lakosztaly',
+            'route' => 'pages.suite',
             'label' => 0,
         ],
     ],

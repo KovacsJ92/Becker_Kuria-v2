@@ -9,19 +9,19 @@
         </div>
         
         <div class="navbar hidden uppercase lg:flex items-center xl:space-x-2">
-          <a href="/szallashelyek" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="/#szallashelyek" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Szálláshelyek') }}
           </a>
-          <a href="/etkezes" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="#etkezes" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Étkezés') }}
           </a>
-          <a href="#service" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="/#szolgaltatasok" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Szolgáltatások') }}
           </a>
-          <a href="#about" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="/#rolunk" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Rólunk') }}
           </a>
-          <a href="#contact" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+          <a href="/#kapcsolat" class="py-4 text-gold99 transition duration-300 ease-in-out text-opacity-75 font-semibold px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Kapcsolat') }}
           </a>
           <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="hidden ml-48 relative  lg:inline-block text-right">
@@ -60,14 +60,13 @@
     </div>
   </div>
 
-  <div x-state:on="Menu open" x-state:off="Menu closed"  :class="{ 'block': open, 'hidden': !open }" class="hidden absolute top-0 w-full bg-gold99 text-2xl leading-tight text-white bg-gray26 md:text-3xl  lg:hidden">
+  <div x-state:on="Menu open" x-state:off="Menu closed"  :class="{ 'block': open, 'hidden': !open }" class="hidden absolute top-0 w-full bg-gold99 text-2xl leading-tight text-white bg-gray26 md:text-3xl  lg:hidden animation ">
     <div class="h-screen flex flex-col items-center justify-center uppercase text-3xl space-y-20">
-      <a href="/menu" class="block py-3 pl-3 pr-4 font-medium">{{ __('Kezdőlap') }}</a>
-      <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium">{{ __('Szálláshelyek') }}</a>
-      <a href="/rendezvenyek" class="block py-3 pl-3 pr-4 font-medium">{{ __('Étkezés') }}</a>
-      <a href="/galeria" class="block py-3 pl-3 pr-4 font-medium">{{ __('Szolgáltatások') }}</a>
-      <a href="/rolunk" class="block py-3 pl-3 pr-4 font-medium">{{ __('Rólunk') }}</a>
-      <a href="/kapcsolat" class="block py-3 pl-3 pr-4 font-medium">{{ __('Kapcsolat') }}</a>
+      <a href="/#szallashelyek" class="block py-3 pl-3 pr-4 font-medium">{{ __('Szálláshelyek') }}</a>
+      <a href="/#etkezes" @click="open = false" class="block py-3 pl-3 pr-4 font-medium">{{ __('Étkezés') }}</a>
+      <a href="/#szolgaltatasok" class="block py-3 pl-3 pr-4 font-medium">{{ __('Szolgáltatások') }}</a>
+      <a href="/#rolunk" class="block py-3 pl-3 pr-4 font-medium">{{ __('Rólunk') }}</a>
+      <a href="/#kapcsolat" class="block py-3 pl-3 pr-4 font-medium">{{ __('Kapcsolat') }}</a>
       <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative py-3 pl-5 pr-4 inline-block text-right">
         <div class="flex space-x-4">
           @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
