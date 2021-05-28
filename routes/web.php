@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+use App\Mail\SendContactMail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,5 +40,10 @@ Route::group(
         return view ('pages.suite');
     })->name('pages.suite');
 
+    Route::post('kapcsolat-uzenet-kuldese', function (Request $request) {
+        \Mail::to(env('MAIL_TO_ADDRESS'))
+            ->send(new SendContactMail($request->all()));
 
+        return redirect('/#kapcsolat')->with('status', 'Sikeres üzenet küldés!');
+    })->name('send-contact-mail');
 });
