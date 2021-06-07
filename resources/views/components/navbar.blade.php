@@ -24,9 +24,12 @@
           <a href="/#kapcsolat" class="py-4 font-medium text-gold99 transition duration-300 ease-in-out text-opacity-75 px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
             {{ __('Kapcsolat') }}
           </a>
+          <a href="/hazirend" class="py-4 font-medium text-gold99 transition duration-300 ease-in-out text-opacity-75 px-7 lg:px-5 lg:py-14 lg:hover:text-gold99">
+            {{ __('Házirend') }}
+          </a>
           <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative hidden ml-48 text-right lg:inline-block">
             <div>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-gray-700 xl:text-2xl focus:outline-none" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
+              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-gray-700 text-2xl focus:outline-none" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
                 <img  height="12.5" width="25" src="/images/flag/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="flag" title="flag">
                 <img x-show="!open" height="25" width="25" src="/images/svg/down-white.svg" alt="down-icon" title="down-icon">
                 <img x-show="open" height="25" width="25" src="/images/svg/up-white.svg" alt="up-icon" title="up-icon">
@@ -61,12 +64,13 @@
   </div>
 
   <div x-state:on="Menu open" x-state:off="Menu closed"  :class="{ 'block': open, 'hidden': !open }" class="absolute top-0 hidden w-full text-2xl leading-tight text-white bg-gold99 bg-gray26 md:text-3xl lg:hidden animation ">
-    <div class="flex flex-col items-center justify-center h-screen text-3xl uppercase space-y-20">
+    <div class="flex flex-col items-center justify-center h-screen text-3xl uppercase space-y-16">
       <a href="/#szallashelyek" class="block py-3 pl-3 pr-4 font-medium">{{ __('Szálláshelyek') }}</a>
       <a href="/#etkezes" @click="open = false" class="block py-3 pl-3 pr-4 font-medium">{{ __('Étkezés') }}</a>
       <a href="/#szolgaltatasok" class="block py-3 pl-3 pr-4 font-medium">{{ __('Szolgáltatások') }}</a>
       <a href="/#rolunk" class="block py-3 pl-3 pr-4 font-medium">{{ __('Rólunk') }}</a>
       <a href="/#kapcsolat" class="block py-3 pl-3 pr-4 font-medium">{{ __('Kapcsolat') }}</a>
+      <a href="/hazirend" class="block py-3 pl-3 pr-4 font-medium">{{ __('Házirend') }}</a>
       <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block py-3 pl-5 pr-4 text-right">
         <div class="flex space-x-4">
           @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)

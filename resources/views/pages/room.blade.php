@@ -14,7 +14,7 @@
                 <h1 class="text-gold99 text-5xl lg:text-6xl uppercase font-semibold tracking-wider">Szoba</h1>
             </div>
             <div class="flex justify-center">
-                <p class="py-10 text-3xl text-gray20 w-2/3 text-center">A kúriában 6 darab, 22 nm-es két ágyas szoba található, melyekhez 3 nm-es zuhanyzós fürdőszoba tartozik. A feltüntetett árak az idegenforgalmi és áruforgalmi adót tartalmazzák. Az ár az étkezéseket nem tartalmazza.</p>
+                <p class="py-10 text-3xl text-gray20 w-2/3 text-center">A kúriában 6 darab, 22 nm-es két ágyas szoba található, melyekhez 3 nm-es zuhanyzós fürdőszoba tartozik. A feltüntetett árak az idegenforgalmi és áruforgalmi adót tartalmazzák. Az ár az étkezéseket nem tartalmazza. A szálláshely jelenleg nem tud házi kedvenceket fogadni.</p>
             </div>
             <div class="flex justify-center pt-10 pb-20">
                 <div class="carousel-inner relative overflow-hidden w-full md:w-2/3 shadow-xl">

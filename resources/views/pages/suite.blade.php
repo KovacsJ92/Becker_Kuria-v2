@@ -17,7 +17,7 @@
             </div>
             <div class="flex justify-center">
                 <p class="py-10 text-3xl text-gray20 w-2/3 text-center">A kúriában 3 darab, 35-45 nm közötti, két légteres lakosztály található, melyekhez 3-5 nm-es zuhanyzós fürdőszoba tartozik. A hálószobában kétszemélyes franciaágy, míg a nappaliban kihúzható kanapé van elhelyezve, mely maximum két, 14 éven aluli személy számára vehető igénybe. A teraszon kerti garnitúra található.
-                    A feltüntetett árak az idegenforgalmi és áruforgalmi adót tartalmazzák. Az ár az étkezéseket nem tartalmazza.</p>
+                    A feltüntetett árak az idegenforgalmi és áruforgalmi adót tartalmazzák. Az ár az étkezéseket nem tartalmazza. A szálláshely jelenleg nem tud házi kedvenceket fogadni.</p>
             </div>
             <div class="flex justify-center pt-10 pb-20">
                 <div class="carousel-inner relative overflow-hidden w-full md:w-2/3 shadow-xl">

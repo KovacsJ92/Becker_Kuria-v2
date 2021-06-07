@@ -40,6 +40,10 @@ Route::group(
         return view ('pages.suite');
     })->name('pages.suite');
 
+    Route::get('hazirend', function () {
+        return view ('pages.houserule');
+    })->name('pages.houserule');
+
     Route::post('kapcsolat-uzenet-kuldese', function (Request $request) {
         \Mail::to(env('MAIL_TO_ADDRESS'))
             ->send(new SendContactMail($request->all()));
