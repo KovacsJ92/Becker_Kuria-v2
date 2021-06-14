@@ -39,7 +39,20 @@
               </button>
             </div>
         
-            <div x-show="open" x-transition:enter="transition ease-in duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-500" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 mt-2 bg-white origin-top-right focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+            <div 
+              x-cloak
+              x-show="open" 
+              x-transition:enter="transition ease-in duration-200" 
+              x-transition:enter-start="transform opacity-0" 
+              x-transition:enter-end="transform opacity-100" 
+              x-transition:leave="transition ease-in duration-200" 
+              x-transition:leave-start="transform opacity-100 scale-100" 
+              x-transition:leave-end="transform opacity-0 scale-95" 
+              class="absolute right-0 mt-2 bg-white origin-top-right focus:outline-none" 
+              role="menu" 
+              aria-orientation="vertical" 
+              aria-labelledby="options-menu"
+            >
                 <div class="py-1" role="none">
                     @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                         @if (LaravelLocalization::getCurrentLocale() != $localeCode)

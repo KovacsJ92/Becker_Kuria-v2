@@ -25,8 +25,6 @@
         @livewireStyles
 
     
-        <script src="{{ url(mix('js/app.js')) }}" defer></script>
-        @livewireScripts
     </head>
 
     <body>
@@ -41,6 +39,9 @@
             <x-footer></x-footer>
         </footer>
 
+
+        @livewireScripts
+        <script src="{{ url(mix('js/app.js')) }}" defer></script>
 
     </body>
 </html>

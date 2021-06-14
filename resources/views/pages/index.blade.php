@@ -17,11 +17,11 @@
         <x-section>
             <x-title>Szálláshelyek</x-title>
             <div class="md:flex md:justify-center">
-                <div class="carousel relative shadow-2xl bg-white mt-20 w-full md:w-2/3 ">
+                <x-carousel />
+                {{-- <div class="carousel relative shadow-2xl bg-white mt-20 w-full md:w-2/3 ">
                     <div class="carousel-inner relative overflow-hidden">
                       <!--Slide 1-->
-                      @foreach (config('becker.rooms') as $room)
-                          
+                      @foreach ($rooms = config('becker.rooms') as $key => $room)
                         <input class="carousel-open z-10 hidden" type="radio" id="carousel-{{ $loop->index }}" name="carousel" aria-hidden="true" hidden="" @if($loop->index == 0) checked="checked" @endif>
                         <div class="carousel-item absolute opacity-0">
                             <div class="shadow-lg">
@@ -52,7 +52,7 @@
                       @endforeach
                         
                     </div>
-                </div>
+                </div> --}}
             </div>
         </x-section>
    </div>
@@ -113,31 +113,31 @@
                                 <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">Ingyenes parkolás</p>
                             </div>
                             <div class="flex items-center">
-                                <img class="w-10" height="35" width="35" src="/images/svg/bike.svg" alt="">
+                                <img class="w-10" height="35" width="35" src="/images/svg/bike.svg" alt="bike">
                                 <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">Kerékpárkölcsönzés</p>
                             </div>
                             <div class="flex items-center">
-                                <img class="w-10" height="35" width="35" src="/images/svg/kayak.svg" alt="">
+                                <img class="w-10" height="35" width="35" src="/images/svg/kayak.svg" alt="kayak">
                                 <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">Kajakkölcsönzés</p>
                             </div>
                         </div>
                         <div class="space-y-20">
                             <div class="flex items-center">
-                                <img class="w-10" height="35" width="35" src="/images/svg/wifi.svg" alt="">
+                                <img class="w-10" height="35" width="35" src="/images/svg/wifi.svg" alt="wifi">
                                 <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">Ingyenes Wifi</p>
                             </div>
                             <div class="flex items-center">
-                                <img class="w-10" height="35" width="35" src="/images/svg/television.svg" alt="">
+                                <img class="w-10" height="35" width="35" src="/images/svg/television.svg" alt="television">
                                 <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">4k Smart Tv</p>
                             </div>
                             <div class="flex items-center">
-                                <img class="w-10" height="35" width="35" src="/images/svg/safe.svg" alt="">
+                                <img class="w-10" height="35" width="35" src="/images/svg/safe.svg" alt="safe">
                                 <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">Szobaszéf</p>
                             </div>
                         </div>
                     </div>
                     <div class="flex items-center justify-center w-full">
-                        <img class="w-10" height="35" width="35" src="/images/svg/coffee.svg" alt="">
+                        <img class="w-10" height="35" width="35" src="/images/svg/coffee.svg" alt="coffee">
                         <p class="text-xl lg:text-2xl xl:text-3xl ml-6 text-gray20">Reggeli igénylés</p>
                     </div>
                 </div>
