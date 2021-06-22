@@ -40,6 +40,9 @@ Route::group(
         return view ('pages.room');
     })->name('pages.room');
 
+    Route::get('palyazat', function () {
+        return view ('pages.competition');
+    })->name('pages.competition');
 
     Route::get('hazirend', function () {
         return view ('pages.houserule');

@@ -1,4 +1,4 @@
-<div class=" h-screen flex flex-col justify-center items-center">
+<div class="py-20 flex flex-col justify-center items-center">
   {{-- @dd(config('becker.rooms')) --}}
     <div 
       class="relative"
