@@ -13,7 +13,8 @@
                 <h2 class="text-whitef8 text-2xl lg:text-3xl uppercase font-semibold">Információk</h2>
                 <a href="/etkezes" class="text-white text-2xl">Étkezés</a>
                 <a href="/szolgaltatsok" class="text-white text-2xl">Szolgáltatások</a>
-                <div x-data="{ open: false }">
+                <a href="/palyazat" class="text-white text-2xl">Pályázat</a>
+                {{-- <div x-data="{ open: false }">
                     <button @click=" open = !open" class="focus:outline-none" title="menu">
                         <a x-show="!open"class="text-white text-2xl">Pályázat</a>
                         <img x-show="open" class="md:hidden absolute top-0 right-0 my-5 mx-10 z-50" width="35" height="35" src="/images/svg/close.svg" alt="menu-close-icon" title="menu-close-icon">
@@ -29,8 +30,7 @@
                             <img class="w-full" width="411" height="481" src="/images/competition-2.png" alt="competition" title="Pályázat">
                         </picture>
                     </div>
-                    
-                </div>
+                </div> --}}
             </div>
             <div class="space-y-5 flex flex-col items-center md:items-start">
                 <h2 class="text-whitef8 text-2xl lg:text-3xl uppercase font-semibold">Kapcsolat</h2>
