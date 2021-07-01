@@ -1,8 +1,8 @@
 @section('title') {{ __('Kezdőlap') }} @endsection
 
 @section('meta_data')
-    <meta name="description" content="{{ __('A part menti dombokra épült, erdők és hegyek ölelésében található Balatonszepezden várjuk múltszázadi hangulatú kúriánkba, pihenni vágyó vendégeinket. Az 1850-es években épült kúria, a falu központjában,a vízpart közelében,a templomkert szomszédságában korhű állapotában pompázik.') }}">
-    <meta property="og:description" content="{{ __('A part menti dombokra épült, erdők és hegyek ölelésében található Balatonszepezden várjuk múltszázadi hangulatú kúriánkba, pihenni vágyó vendégeinket. Az 1850-es években épült kúria, a falu központjában,a vízpart közelében,a templomkert szomszédságában korhű állapotában pompázik.') }}">
+    <meta name="description" content="{{ __('A part menti dombokra épült, erdők és hegyek ölelésében található Balatonszepezden várjuk múltszázadi hangulatú kúriánkba, pihenni vágyó szállás keresõ vendégeinket. Az 1850-es években épült kúria, a falu központjában,a vízpart közelében,a templomkert szomszédságában korhű állapotában pompázik. Egyik legjobb választás lehet balatoni szállás tekintetében.') }}">
+    <meta property="og:description" content="{{ __('A part menti dombokra épült, erdők és hegyek ölelésében található Balatonszepezden várjuk múltszázadi hangulatú kúriánkba, pihenni vágyó szállás keresõ vendégeinket. Az 1850-es években épült kúria, a falu központjában,a vízpart közelében,a templomkert szomszédságában korhű állapotában pompázik. Egyik legjobb választás lehet balatoni szállás tekintetében.') }}">
     <meta property="og:url" content="https://beckerkuria.hu/"> 
 @endsection
 
