@@ -169,21 +169,21 @@
                     </div>
                </div>
                <div class="w-full md:w-1/2 px-16">
-                    <div class="space-y-4 mt-16 overscroll-auto  overflow-y-scroll  h-112 xl:h-full">
+                    <div class="space-y-4 mt-16 overscroll-auto  overflow-y-scroll h-112 xl:h-full">
                         <h2 class="text-4xl mt-8 sm:mt-8 text-gray1e uppercase">Rólunk</h2>
-                        <p class="text-2xl xl:text-3xl text-gray20">
+                        <p class="text-2xl xl:text-3xl text-gray20 text-justify">
                             A part menti dombokra épült, erdők és hegyek ölelésében található Balatonszepezden várjuk
                             múltszázadi hangulatú kúriánkba, pihenni vágyó vendégeinket. Az 1850-es években épült kúria, a falu
                             központjában,a vízpart közelében,a templomkert szomszédságában korhű állapotában pompázik.
                         </p>
                         <h2 class="text-4xl text-gray1e uppercase">Kúria története</h2>
-                        <p class="text-2xl xl:text-3xl text-gray20">
+                        <p class="text-2xl xl:text-3xl text-gray20 text-justify">
                             Eredetileg Felsődörgicsei Nagy Pál (1832-†1891) háza volt, az1850-es években épült. Az ide látogató vendégekrõl 1887-ben már fürdővendégkönyvet vezettek. Felsődörgicsei Nagy Pál örökösei az épületet eladták Gróf Apponyi Henriknek (1885–1936), majd ő ajándékozta a kor ünnepelt szépségének, így lett „Becker Bäby ház”.
                         </p>
-                        <p class="text-2xl xl:text-3xl text-gray20">
+                        <p class="text-2xl xl:text-3xl text-gray20 text-justify">
                             Bertha Bulcsu (1935-1997) Becker Bäby és a peszticidek c. könyvében a következőket írja: „A szepezdi főútra épült villát már gróf Apponyi Henrik ajándékozta a kor ünnepelt szépségének. A pletyka szerint gróf Apponyi Henrik feleségül akarta venni Becker Bäbyt, de végül nem ő, hanem Heinrich Antal, a gazdag vasgyáros vezette anyakönyvvezető elé.
                         </p>
-                        <p class="text-2xl xl:text-3xl text-gray20">
+                        <p class="text-2xl xl:text-3xl text-gray20 text-justify">
                             Becker Bäby szepezdi villájába a jobb emberek persze a főkapun szoktak belépni… Urak, művészek, sportolók… A villa gyakori vendége volt a híres vívóbajnok, Petschauer Attila is." A későbbiekben az államosítás után, 70 évig szakszervezeti üdülőként működött. Teljes körű felújítás után, jelenleg panzióként üzemel.
                         </p>
                     </div>
