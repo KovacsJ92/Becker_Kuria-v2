@@ -191,7 +191,10 @@
            </div>
        </x-section>
    </div>
-   <div id="kapcsolat" class="bg-white py-20">
+   <div id="galéria" class="bg-white py-20">
+        <livewire:gallery />
+</div>
+   <div id="kapcsolat" class="bg-whitef8 py-20">
        <x-section>
            <x-title>kapcsolatok</x-title>
            <x-contact></x-contact>

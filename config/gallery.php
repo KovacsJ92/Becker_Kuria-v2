@@ -47,4 +47,24 @@ return [
             'label' => 0,
         ],
     ],
+    'gallery' => [
+        [
+            'name' => 'gallery-1',
+            'alt' => 'Galéria-kép-1',
+            'title' => 'Galéria-kép-1',
+            'label' => 1,
+        ],
+        [
+            'name' => 'gallery-2',
+            'alt' => 'Galéria-kép-2',
+            'title' => 'Galéria-kép-2',
+            'label' => 2,
+        ],
+        [
+            'name' => 'gallery-3',
+            'alt' => 'Galéria-kép-3',
+            'title' => 'Galéria-kép-3',
+            'label' => 0,
+        ],
+    ],
 ];

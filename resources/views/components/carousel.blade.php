@@ -3,7 +3,7 @@
     <div 
       class="relative"
       x-data="{ activeSlide: 1, slides: {{ json_encode(config("becker.rooms")) }} }"
-      
+      x-cloak 
      >
       <!-- Slides -->
     <template x-for="slide in slides" :key="slide">
