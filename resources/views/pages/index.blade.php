@@ -59,7 +59,7 @@
    <div id="etkezes" class="bg-whitef8 px-8 py-20">
         <x-section >
             <x-title>étkezés</x-title>
-            <div class=" py-20">
+            <div class="">
                 <div class="flex flex-col lg:flex-row items-center justify-center">
                     <picture>
                         <source srcset ="/images/reggeli.webp" type="image/webp">

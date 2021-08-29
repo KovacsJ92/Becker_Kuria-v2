@@ -44,6 +44,12 @@ return [
             'name' => 'suite-4',
             'alt' => 'Lakosztaly-kep4',
             'title' => 'Lakosztály-kép4',
+            'label' => 4,
+        ],
+        [
+            'name' => 'suite-5',
+            'alt' => 'Lakosztaly-kep5',
+            'title' => 'Lakosztály-kép5',
             'label' => 0,
         ],
     ],
