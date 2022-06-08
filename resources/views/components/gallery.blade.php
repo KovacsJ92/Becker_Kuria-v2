@@ -7,7 +7,6 @@
     
         @endforeach
     </div>
-    @dd($this->images)
     
     
     {{-- <x-modals.image wire:model="showImage" :maxWidth="'6xl'">
