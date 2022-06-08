@@ -1,5 +1,5 @@
 <x-section>
-    <div class="flex overflow-x-auto">
+    <div class="flex overflow-x-auto ml-10">
         @foreach ($this->images as $img)
     
             <img wire:click="showImageModal('{{ $img->slug }}')" class="mr-10 max-h-96 md:max-h-128"

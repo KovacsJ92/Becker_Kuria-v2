@@ -26,40 +26,30 @@
                     tartalmazza. A szálláshely jelenleg nem tud házi kedvenceket fogadni.</p>
             </div>
             <div class="flex justify-center pt-10 pb-20">
-                {{-- <div class="carousel-inner relative overflow-hidden w-full md:w-2/3 shadow-xl">
-                    @foreach (config('gallery.suites') as $suite)
-                        
-                      <input class="carousel-open z-10 hidden" type="radio" id="carousel-{{ $loop->index }}" name="carousel" aria-hidden="true" hidden="" @if ($loop->index == 0) checked="checked" @endif>
-                      <div class="carousel-item absolute opacity-0">
-                          <div class="shadow-lg">
-                              <picture class="relative">
-                                  <source srcset ="/images/{{ $suite['name']}}.webp" type="image/webp">
-                                  <img class="w-full" src="/images/{{ $suite['name']}}.png" alt="{{ $suite['alt']}}" title="{{ $suite['title']}}" height="640" width="860">
-                              </picture>
-                          </div>
-                      </div>
-                      <label for="carousel-{{ $suite['label'] }}" class="prev control-{{ $loop->index }} w-16 h-16 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gold99 hover:text-white rounded-full bg-white hover:bg-gold99 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                      <label for="carousel-{{ $suite['label'] }}" class="next control-{{ $loop->index }} w-16 h-16 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gold99 hover:text-white rounded-full bg-white hover:bg-gold99 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-                    @endforeach
-                </div> --}}
                 <div class="relative"
-            
-                    x-data="{ activeSlide: 1, slides: {{ json_encode(config('gallery.suites')) }} }" x-cloak>
+                    x-data="{ activeSlide: 1, slides: {{ json_encode(config('gallery.suites')) }} }" 
+                    x-cloak
+                >
                     <!-- Slides -->
-                    <template x-for="slide in slides" :key="slide">
-                        <div x-show="activeSlide === slide.id" class="w-full">
+                    <template 
+                        x-for="slide in slides" 
+                        :key="slide"
+                    >
+                        <div 
+                            x-show="activeSlide === slide.id" 
+                            class="w-full"
+                        >
                             <div class="carousel-item">
                                 <div class="shadow-lg">
                                     <picture class="relative">
                                         <source :srcset="`/images/${slide.name}.webp`" type="image/webp">
-                                        <img class="w-full max-h-96 md:max-h-full" :src="`/images/${slide.name}.png`" alt="room"
-                                            title="room" height="640" width="860">
+                                        <img class="w-full max-h-96 md:max-h-full" :src="`/images/${slide.name}.png`"
+                                            alt="room" title="room" height="640" width="860">
                                     </picture>
                                 </div>
                             </div>
                         </div>
                     </template>
-
 
                     <!-- Prev/Next Arrows -->
                     <div class="inset-0 flex">
@@ -167,5 +157,4 @@
             <x-contact></x-contact>
         </x-section>
     </div>
-
 </x-layout>
