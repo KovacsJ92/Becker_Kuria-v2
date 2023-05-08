@@ -19,6 +19,7 @@
         <meta property="og:type" content="website">
         <meta property="robots" content="index, follow">
         <meta charset="utf-8">
+        <meta name="facebook-domain-verification" content="u15j393oo04x7m6s4rql336rigb22j" />
 
 
         <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
