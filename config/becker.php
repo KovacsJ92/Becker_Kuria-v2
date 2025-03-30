@@ -5,7 +5,7 @@ return [
         [   
             'name' => 'Lakosztály',
             'description' => '2-4 vendég',
-            'price' => '50.000-tól',
+            'price' => '65.000-tól',
             'image' => [
                 'name' => 'lakosztaly',
                 'alt' => 'Lakosztály',
@@ -18,7 +18,7 @@ return [
         [
             'name' => 'Szoba',
             'description' => '2 vendég',
-            'price' => '35.000-tól',
+            'price' => '45.000-tól',
             'image' => [
                 'name' => 'szoba',
                 'alt' => 'Szoba',
