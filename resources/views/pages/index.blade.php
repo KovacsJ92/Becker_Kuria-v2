@@ -22,17 +22,14 @@
         <x-section>
             <x-title>Szálláshelyek</x-title>
             <div class="md:flex md:justify-center">
-                <div class="carousel relative shadow-2xl bg-white mt-20 w-full md:w-2/3 ">
-                    <div class="carousel-inner relative overflow-hidden">
-                        <!--Slide 1-->
+                <div class="swiper mySwiper relative mt-16 w-full md:w-2/3" style="">
+                    <!-- Magasság explicit megadása -->
+                    <div class="swiper-wrapper">
                         @foreach (config('becker.rooms') as $room)
-                            <input class="carousel-open z-10 hidden" type="radio" id="carousel-{{ $loop->index }}"
-                                name="carousel" aria-hidden="true" hidden=""
-                                @if ($loop->index == 0) checked="checked" @endif>
-                            <div class="carousel-item absolute opacity-0">
-                                <div class="shadow-lg">
+                            <div class="swiper-slide shadow-lg border border-gold99">
+                                <div class="shadow-lg relative">
                                     <picture class="relative">
-                                        <source srcset ="/images/{{ $room['image']['name'] }}.webp" type="image/webp">
+                                        <source srcset="/images/{{ $room['image']['name'] }}.webp" type="image/webp">
                                         <img class="w-full" src="/images/{{ $room['image']['name'] }}.png"
                                             alt="room" title="room" height="640" width="860">
                                     </picture>
@@ -53,18 +50,20 @@
                                             </div>
                                         </div>
                                         <a href="{{ route($room['route']) }}"
-                                            class="border hover:border-transparent border-gold99 text-gold99 hover:text-white hover:bg-gold99 bg-opacity-75  transition-colors ease-in duration-500 font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 text-2xl lg:text-3xl uppercase shadow-sm focus:outline-none">
+                                            class="border hover:border-transparent border-gold99 text-gold99 hover:text-white hover:bg-gold99 bg-opacity-75 transition-colors ease-in duration-500 font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 text-2xl lg:text-3xl uppercase shadow-sm focus:outline-none">
                                             {{ $room['name'] }}
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <label for="carousel-{{ $room['label'] }}"
-                                class="prev control-{{ $loop->index }} w-16 h-16 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gold99 hover:text-white rounded-full bg-white hover:bg-gold99 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                            <label for="carousel-{{ $room['label'] }}"
-                                class="next control-{{ $loop->index }} w-16 h-16 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gold99 hover:text-white rounded-full bg-white hover:bg-gold99 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
                         @endforeach
-
+                    </div>
+                    <!-- Navigációs gombok az eredeti stílussal -->
+                    <div
+                        class="swiper-button-prev w-16 h-16 ml-2 md:ml-10 absolute cursor-pointer lg:block font-bold text-gold99 hover:text-white rounded-full bg-white hover:bg-gold99 leading-tight text-center z-30 inset-y-0 left-0 my-auto">
+                    </div>
+                    <div
+                        class="swiper-button-next w-16 h-16 mr-2 md:mr-10 absolute cursor-pointer lg:block font-bold text-gold99 hover:text-white rounded-full bg-white hover:bg-gold99 leading-tight text-center z-30 inset-y-0 right-0 my-auto">
                     </div>
                 </div>
             </div>
